@@ -1,0 +1,30 @@
+Se requiere ingresar las ventas totales diaras de 2 vendedores; realizadas 
+de lunes a viernes. Los vendedores están representados en una estructura 
+unidimensional de dos elementos. El arreglo se llama vendedores 
+El arreglo bimensional que permitirá almacenar las ventas diarias tiene 2 
+filas y 5 columnas. El arreglo se llama ventas
+Existe una relación entre el índice 0 del arreglo vendedores y la fila de 
+índice 0 del arreglo ventas.
+Luego de ingresar los valores se necesita presentar el total de ventas de 
+todos los vendedores de la siguiente forma:
+
+Vendedor(a) Jessica Cole	
+Vendedor(a) Robert Wallace
+Ha realizado un total de ? en ventas
+
+
+1.  Inicio
+2.  (vendedores(2), x[{A-B}, {a-z}, {BS}] <-- {"Jessica Cole", "Robert Wallace"}
+3.  (ventas(2)(5), d[0-n])
+4.  (dia(5), x(10)[{A-Z}, {a,z}]) <-- {"Lunes", "Martes", "Miercoles", "Jueves", "Viernes"}
+5.  total, d[0-n]<--0
+6.  Para (fila i <-- 0, filas < 2, 1) haga
+7.  	Para (columna <-- 0, columna < 5, 1) haga
+8. 		<< "Ingrese las ventas de " + vendedores[fila] + "en el día " + dia[columna] + ": "
+9. 		>> ventas[filas][columna]
+10.		total <-- total + ventas[filas][columna]
+11. 	Fin Para
+12. 	<< "Vendedor(a) " + vendedor[fila] 
+13. Fin Para	
+14. << "Ha realizado un total de " + total +"$ en ventas."
+15. Fin 
